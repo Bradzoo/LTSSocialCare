@@ -4,6 +4,14 @@ second class #BFB854
 
 
 */
+
+h1{
+  font-family: 'Pacifico', cursive;
+}
+
+p{
+font-family: 'Space Mono', monospace;
+}
 .home { background-color:#ADAABF  ;
        padding:100px;
        margin:5px;
@@ -14,13 +22,25 @@ second class #BFB854
       }
 .column-circle {
   float: left;
-  width: 20%;
-  padding: 20px;
-  text-align: center;
+  width: 25%;
+   text-align: center;
 }
-  
+/*tells the browser to account for any border and padding in */
+/*the values you specify for an element's width and height*/
+* {
+  box-sizing: border-box;
+}
+/* Clear floats after the columns If an element is taller than the */
+/*element containing it, and it is floated, it will overflow outside of its container.*/
+ .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
 .bg-grey{
   background-color: #ADAABF;
+  padding:120px 20px;
 }
 
 .column-circle img{
@@ -34,7 +54,7 @@ nav{
   border:1px solid #dedede;
   color:#000000;
   overflow:hidden;
-  width:100%
+  width:100%;
 }
 
 nav ul li{
@@ -46,7 +66,7 @@ nav ul li a{
     display: block;
     line-height:56px;
   text-decoration: none;
-  padding:10px
+  padding:10px;
   
 }
 
@@ -57,9 +77,9 @@ nav ul li:hover{
 nav ul li:hover a{
   color:#204359;
 }
-footer{
-  background-color:#A6974B;
-  color:#00000;
+footer {
+  background-color:#A6974B;;
+  color:#000000;
   text-align: centre;
   padding:10px 50px;
 }
